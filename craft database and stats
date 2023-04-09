@@ -1,0 +1,29 @@
+CREATE TABLE crafts (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, yearmade INTEGER);
+
+INSERT INTO crafts VALUES (1, "birdhouses", 15, 25, 2002);
+INSERT INTO crafts VALUES (2, "largecactibowls", 75, 5, 2001);
+INSERT INTO crafts VALUES (3, "mediumcactibowls", 50, 5, 2001);
+INSERT INTO crafts VALUES (4, "smallcactibowls", 30, 5, 2001);
+INSERT INTO crafts VALUES (5, "macrame", 20, 10, 2003);
+INSERT INTO crafts VALUES (6, "dogs", 30, 2, 1998);
+INSERT INTO crafts VALUES (7, "cats", 30, 6, 1999);
+INSERT INTO crafts VALUES (8, "reindeers", 40, 10, 2001);
+INSERT INTO crafts VALUES (9, "grinchbottles", 30, 2, 1999);
+INSERT INTO crafts VALUES (10, "pennyhangers", 75, 1, 2002);
+INSERT INTO crafts VALUES (11, "rooster", 300, 1, 2022);
+INSERT INTO crafts VALUES (12, "mosswall", 250, 1, 2023);
+INSERT INTO crafts VALUES (13, "painting", 150, 3, 2021);
+INSERT INTO crafts VALUES (14, "guitar", 700, 1, 2018);
+INSERT INTO crafts VALUES (15, "blanket", 100, 3, 2012);
+SELECT * FROM crafts;
+
+---display the database ordered by price
+SELECT * FROM crafts
+ORDER BY price desc;
+
+---display the database by quantity
+SELECT name, quantity FROM crafts;
+
+---display the database by year it was made
+SELECT name, yearmade FROM crafts
+order by yearmade;
